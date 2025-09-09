@@ -17,9 +17,20 @@
     header {
       background: #004d40;
       color: white;
-      text-align: center;
-      padding: 50px 20px;
+      text-align: left;
+      padding: 30px 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .header-container {
+      display: flex;
+      align-items: center; /* Logo ve başlığı dikey ortalar */
+      justify-content: flex-start; /* Logo solda, başlık yanında */
+      gap: 20px; /* Aralarındaki boşluk */
+    }
+    .school-logo {
+      width: 60px;
+      height: auto;
+      border-radius: 8px;
     }
     header h1 {
       margin: 0;
@@ -109,7 +120,10 @@
 </head>
 <body>
   <header>
-    <h1>Türkiye'de Coğrafi Olaylar</h1>
+    <div class="header-container">
+      <img src="images.jpeg" alt="Okul Logosu" class="school-logo">
+      <h1>Türkiye'de Coğrafi Olaylar</h1>
+    </div>
     <p>6 Şubat 2023 Kahramanmaraş Depremleri</p>
   </header>
 
