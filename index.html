@@ -1,114 +1,172 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Türkiye'deki Coğrafi Olaylar - 6 Şubat 2023 Depremleri</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Türkiye'deki Coğrafi Olaylar — 6 Şubat 2023 Depremleri</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
+    :root{
+      --accent:#004d40;
+      --card-bg:#ffffff;
+      --bg:#f6f7f9;
+      --muted:#666;
+      --maxw:1000px;
     }
-    header {
-      background: #004d40;
-      color: white;
-      padding: 20px;
-      text-align: center;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background:var(--bg);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
     }
-    h1, h2, h3 {
-      margin: 10px 0;
+    header{
+      background: linear-gradient(90deg,var(--accent), #00695c);
+      color:white;
+      padding:36px 16px;
+      text-align:center;
     }
-    main {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
+    header h1{margin:0;font-size:28px}
+    header p{margin:6px 0 0;color:rgba(255,255,255,0.9)}
+
+    main{max-width:var(--maxw);margin:28px auto;padding:0 16px}
+
+    .card{
+      background:var(--card-bg);
+      border-radius:10px;
+      box-shadow:0 6px 18px rgba(20,20,20,0.06);
+      padding:18px;
+      margin-bottom:20px;
+      overflow:hidden;
     }
-    section {
-      margin-bottom: 30px;
+
+    .hero{
+      position:relative;
+      height:320px;
+      border-radius:10px;
+      overflow:hidden;
     }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin: 10px 0;
+    .hero img{width:100%;height:100%;object-fit:cover;display:block}
+    .hero .hero-text{
+      position:absolute;left:0;right:0;bottom:16px;text-align:center;
+      color:white;font-weight:700;font-size:36px;text-shadow:0 6px 18px rgba(0,0,0,0.45);
     }
-    footer {
-      text-align: center;
-      background: #004d40;
-      color: white;
-      padding: 10px;
-      margin-top: 20px;
+
+    h2{margin:8px 0 12px;font-size:20px}
+    p{margin:8px 0;color:#222;line-height:1.5}
+    ul{margin:8px 0 8px 20px}
+    img.responsive{max-width:100%;border-radius:8px;margin-top:12px;display:block}
+
+    .meta{font-size:14px;color:var(--muted)}
+    footer{max-width:var(--maxw);margin:18px auto 50px;padding:12px 16px;text-align:center;color:#444}
+
+    .profile{
+      display:flex;gap:12px;align-items:center;margin-top:6px;
+      flex-wrap:wrap;
     }
-    .info-box {
-      background: white;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
+    .profile .info{font-size:14px;color:var(--muted)}
+    a.link{color:var(--accent);text-decoration:none}
+
+    /* responsive */
+    @media (max-width:600px){
+      .hero{height:220px}
+      .hero .hero-text{font-size:24px}
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Türkiye'deki Coğrafi Olaylar</h1>
-    <h2>6 Şubat 2023 Kahramanmaraş Depremleri</h2>
+    <p>Derinlemesine vaka incelemeleri — 6 Şubat 2023 Kahramanmaraş Depremi</p>
   </header>
 
   <main>
-    <section class="info-box">
-      <h2>📍 Tarih ve Saat</h2>
-      <p><b>İlk Deprem:</b> 6 Şubat 2023, saat 04:17 (Mw 7.8, Pazarcık - Kahramanmaraş)</p>
-      <p><b>İkinci Deprem:</b> 6 Şubat 2023, saat 13:24 (Mw 7.5, Elbistan - Kahramanmaraş)</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/2023_Turkey%E2%80%93Syria_earthquakes_map.svg/800px-2023_Turkey%E2%80%93Syria_earthquakes_map.svg.png" alt="Depremin merkez üssü haritası">
+    <!-- Öğrenci Bilgileri -->
+    <section class="card">
+      <h2>Hazırlayan</h2>
+      <div class="profile">
+        <div class="info">
+          <strong>Ad:</strong> Yılmaz Karabulut<br>
+          <strong>Sınıf / Şube:</strong> 10/A<br>
+          <strong>Numara:</strong> 231<br>
+          <strong>E-posta:</strong> <a class="link" href="mailto:yilmazkarabulut@akhisarkoleji.com">yilmazkarabulut@akhisarkoleji.com</a>
+        </div>
+      </div>
+      <p class="meta">Bu çalışma, 6 Şubat 2023 deprem zincirinin nedenleri, etkileri, kurtarma çalışmaları ve toplumsal sonuçlarına dair derlenmiş haber ve bilimsel kaynaklara dayanmaktadır.</p>
     </section>
 
-    <section class="info-box">
-      <h2>🌍 Coğrafi Özellik</h2>
-      <p>Depremler, <b>Doğu Anadolu Fay Zonu</b> üzerinde gerçekleşti. İlk depremde yaklaşık <b>300 km uzunluğunda bir fay hattı koptu</b>. Yüzeyde yer yer <b>3–7 metreye varan kaymalar</b> gözlendi.</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Kahramanmaras_earthquake_damage.jpg" alt="Deprem sonrası yıkılan binalar">
+    <!-- Kapak -->
+    <section class="card hero">
+      <img src="images/kapak_093226.webp" alt="Deprem enkazı kapak fotoğrafı">
+      <div class="hero-text">6 Şubat 2023 — 04:17</div>
     </section>
 
-    <section class="info-box">
-      <h2>📌 Etkilenen Bölgeler</h2>
-      <p>Depremler Türkiye’de <b>11 ili</b> doğrudan etkiledi:</p>
+    <!-- Zaman ve Teknik Bilgiler -->
+    <section class="card">
+      <h2>Olayın Zamanı & Teknik Detaylar</h2>
+      <p><strong>Tarih & Saat:</strong> İlk büyük deprem 6 Şubat 2023, saat 04:17 (TSİ). Aynı gün içinde, yaklaşık 9 saat sonra ikinci büyük deprem meydana geldi.</p>
+
+      <p><strong>Büyüklük ve merkez üsleri:</strong> İlk ana sarsıntı <strong>Mw 7.8</strong> (Pazarcık, Kahramanmaraş civarı) olarak kaydedildi; takip eden büyük sarsıntılardan en önemlisi <strong>Mw 7.5</strong> büyüklüğündeydi (Elbistan yakınları).</p>
+
+      <p><strong>Fay ve yereşimi:</strong> Olaylar Doğu-Anadolu yönlü fay sistemleriyle ilişkiliydi. Birçok bilimsel çalışma, her iki büyük sarsıntının da geniş yüzey kırılmalarına yol açtığını; yeryüzünde yüzlerce kilometrelik kırılma ve yüzey kaymaları oluştuğunu raporladı.</p>
+
+      <p class="meta">(Kaynaklar: USGS, bilimsel raporlar ve afet kurumlarının teknik açıklamaları.)</p>
+    </section>
+
+    <!-- Etki Bölgesi -->
+    <section class="card">
+      <h2>Etkilenen Bölgeler ve Kapsam</h2>
+      <p>Deprem bütün güneydoğu ve güney illerini etkiledi. En ağır hasar alan iller arasında <strong>Kahramanmaraş, Hatay, Gaziantep, Adıyaman, Malatya, Şanlıurfa, Kilis, Osmaniye, Diyarbakır, Adana ve Elazığ</strong> yer aldı. Sınırlar ötesinde Suriye'nin kuzey bölgelerinde de geniş yıkım raporlandı.</p>
+
+      <p>Yerleşim birimlerinde geniş çaplı bina çökmesi, altyapı hasarı, yolların kapanması, enerji ve su kesintileri gibi zincirleme etkiler meydana geldi. Isınma ve barınma ihtiyacı soğuk kış günlerinde hayati öneme sahip oldu; milyonlarca kişi acil yardım gereksinimi bildirdi.</p>
+
+      <img class="responsive" src="images/k_06105252_k_06150524_161317.jpg" alt="Enkaz görüntüsü - Deprem sonrası">
+    </section>
+
+    <!-- İnsan ve Toplumsal Etkiler -->
+    <section class="card">
+      <h2>İnsan Kaybı, Yaralanma ve İnsani Etki</h2>
+      <p>Deprem zinciri, hem Türkiye hem de Suriye'de on binlerce insanın hayatını kaybetmesine ve yüzbinlerce yaralanmaya neden oldu. Resmi ve uluslararası kaynaklarca açıklanan rakamlar zaman içinde güncellendi; farklı kurumlar ölüm ve yaralı sayıları hakkında farklı sayılar bildirdiği için kesin nihai rakamlar kurum raporlarına göre değişebiliyor.</p>
+
+      <p>Felaketin ardından yürütülen arama-kurtarma çalışmalarında birçok mucizevi kurtarma öyküsü yaşandı; aynı zamanda kurtarma sürecindeki gecikmeler, yetersiz binaların çökmesi ve lojistik zorluklar yoğun şekilde tartışıldı. Kurtarma fazı yavaş yavaş yardım ve yeniden inşa fazına kaydı.</p>
+    </section>
+
+    <!-- 'Bisküvi' Olayı ve İnsan Hikâyeleri -->
+    <section class="card">
+      <h2>Toplumsal Hikâyeler: "Cebimde bisküvi vardı"</h2>
+      <p>Felaket sırasında basında geniş yer bulan insan hikâyelerinden biri Hatay'da enkaz bekleyişi sırasında elinde bisküvi olan bir baba fotoğrafı/ifadesiydi. Basına yansıyan röportajlarda, depremde ailesini kaybetmiş ve cebinde tuttuğu bisküviyle çocuklarına vereceğini söyleyen Şerif isimli kişinin çaresiz bekleyişi milyonların yüreğini burktu. Bu tür bireysel öyküler felaketin insani boyutunu çarpıcı biçimde gösterdi; bazı kaynaklar daha sonra kişinin sağlık sorunları veya vefatıyla ilgili güncellemeler de yayınladı.</p>
+
+      <p>Bu kısa ama etkileyici anekdot, medyada "bisküvi" ifadesiyle sıkça anıldı ve afetin duygusal yükünü toplumun gündemine taşıdı.</p>
+
+      <p class="meta">(Bu bölüm yerel haber kaynakları üzerinden derlenmiştir.)</p>
+    </section>
+
+    <!-- Kurtarma ve Yardım Çalışmaları -->
+    <section class="card">
+      <h2>Kurtarma, Yardım ve Sonrası</h2>
+      <p>İlk günlerden itibaren Türkiye içinden ve dışından pek çok arama-kurtarma ekibi, sivil toplum kuruluşları ve uluslararası kurum sahaya intikal etti. Kritik ihtiyaçlar; barınma, tıbbi müdahale, temiz su, ısınma, gıda ve psikososyal destek olarak sıralandı. Birçok ülke yardım gönderdi; fakat lojistik, hava koşulları ve hasarlı altyapı dağıtım sürecini güçleştirdi.</p>
+
+      <p>Uzun vadede, güvenli konut temini, hasarlı binaların yeniden inşası, kentsel dönüşüm, yapı denetimlerinin güçlendirilmesi ve deprem risk yönetimi önlemlerinin alınması gibi konular öncelikli gündem maddeleri oldu.</p>
+    </section>
+
+    <!-- Kaynaklar -->
+    <section class="card">
+      <h2>Kaynaklar & Daha Fazla Okuma</h2>
       <ul>
-        <li>Kahramanmaraş</li>
-        <li>Hatay</li>
-        <li>Gaziantep</li>
-        <li>Adıyaman</li>
-        <li>Malatya</li>
-        <li>Şanlıurfa</li>
-        <li>Kilis</li>
-        <li>Osmaniye</li>
-        <li>Diyarbakır</li>
-        <li>Adana</li>
-        <li>Elazığ</li>
+        <li><a class="link" href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000jllz" target="_blank" rel="noopener">USGS — Pazarcık (Mw 7.8) olayı</a></li>
+        <li><a class="link" href="https://www.usgs.gov/publications/rapid-characterization-february-2023-kahramanmaras-turkey-earthquake-sequence" target="_blank" rel="noopener">USGS — Araştırma ve hızlı karakterizasyon</a></li>
+        <li><a class="link" href="https://en.wikipedia.org/wiki/2023_Turkey%E2%80%93Syria_earthquakes" target="_blank" rel="noopener">Wikipedia — 2023 Türkiye–Suriye Depremleri (özet ve zaman çizelgesi)</a></li>
+        <li><a class="link" href="https://apnews.com/article/3ea8e5daa7dea3e63dd7cfdb826e3a17" target="_blank" rel="noopener">AP News — Olay sonrası gelişmeler</a></li>
+        <li><a class="link" href="https://www.yenisafak.com/gundem/enkaz-basinda-cebindeki-biskuviyle-milyonlari-yasa-bogmustu-serif-amcadan-aci-haber-vasiyeti-yerine-getirildi-4589363" target="_blank" rel="noopener">Yerel haber — "cebinde bisküvi" hikâyesi</a></li>
       </ul>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/AFAD_earthquake_response.png/640px-AFAD_earthquake_response.png" alt="AFAD deprem müdahalesi">
+      <p class="meta">Not: Bu sayfada verilen rakamlar ve bilgiler farklı kaynaklardan derlenmiştir; resmi kurum verileri (AFAD vb.) veya bilimsel yayınlar zaman içinde güncellenmiş olabilir. En güncel resmi veriler için kurum sitelerine bakınız.</p>
     </section>
 
-    <section class="info-box">
-      <h2>📊 Sonuçlar</h2>
-      <p><b>Can kaybı:</b> 50.000+ kişi (Türkiye & Suriye)</p>
-      <p><b>Yaralı:</b> 100.000+</p>
-      <p><b>Bina hasarı:</b> Yüzbinlerce bina yıkıldı veya ağır hasar aldı.</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/2023_Turkey%E2%80%93Syria_earthquake_building_damage_in_Turkey_5.jpg/640px-2023_Turkey%E2%80%93Syria_earthquake_building_damage_in_Turkey_5.jpg" alt="Yıkılan apartmanlar">
-    </section>
-
-    <section class="info-box">
-      <h2>🌐 Kaynaklar</h2>
-      <ul>
-        <li><a href="https://www.afad.gov.tr" target="_blank">AFAD Resmi Sitesi</a></li>
-        <li><a href="https://earthquake.usgs.gov/earthquakes/eventpage/us6000jllz/executive" target="_blank">USGS Earthquake Report</a></li>
-        <li><a href="https://tr.wikipedia.org/wiki/2023_Türkiye-Suriye_depremi" target="_blank">Wikipedia - 2023 Depremleri</a></li>
-      </ul>
-    </section>
   </main>
 
   <footer>
-    <p>© 2025 Türkiye Coğrafi Olaylar Projesi</p>
+    <div>© 2025 — Türkiye'deki Coğrafi Olaylar (Okul Projesi)</div>
+    <div class="meta">Hazırlayan: Yılmaz Karabulut — 10/A • 231 • <a class="link" href="mailto:yilmazkarabulut@akhisarkoleji.com">yilmazkarabulut@akhisarkoleji.com</a></div>
   </footer>
 </body>
 </html>
