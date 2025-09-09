@@ -6,28 +6,30 @@
   <title>Türkiye'de Coğrafi Olaylar</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.7;
       margin: 0;
       padding: 0;
       background: linear-gradient(to bottom, #f5f5f5, #e0f7fa);
       color: #333;
+      scroll-behavior: smooth;
     }
     header {
       background: #004d40;
       color: white;
       text-align: center;
-      padding: 40px 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 50px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
     header h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 38px;
       animation: fadeIn 2s ease-in-out;
     }
     header p {
-      margin: 10px 0 0;
+      margin: 12px 0 0;
       font-size: 20px;
+      animation: fadeIn 3s ease-in-out;
     }
     @keyframes fadeIn {
       from {opacity:0; transform: translateY(-20px);}
@@ -40,9 +42,14 @@
       background: white;
       border-radius: 15px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      animation: contentFade 2s ease-in;
+    }
+    @keyframes contentFade {
+      from {opacity:0;}
+      to {opacity:1;}
     }
     section {
-      margin-bottom: 40px;
+      margin-bottom: 45px;
     }
     h2 {
       color: #e65100;
@@ -50,24 +57,39 @@
       border-bottom: 3px solid #e65100;
       padding-bottom: 5px;
       font-size: 28px;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: #ff8f00;
+      left: 0;
+      bottom: -3px;
+      animation: slide 1.5s ease-out;
+    }
+    @keyframes slide {
+      from {width: 0;}
+      to {width: 50px;}
     }
     img {
       max-width: 100%;
       border-radius: 12px;
       margin: 20px 0;
       display: block;
-      transition: transform 0.3s, box-shadow 0.3s;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.4s, box-shadow 0.4s;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
     img:hover {
       transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
     .info-box {
       background: #ffe0b2;
       padding: 18px;
       border-radius: 12px;
-      margin: 15px 0;
+      margin: 20px 0;
       font-weight: bold;
       line-height: 1.6;
     }
@@ -99,12 +121,12 @@
         6 Şubat 2023 sabahı Türkiye, tarihinin en yıkıcı depremlerinden birini yaşadı. 
         Kahramanmaraş merkezli deprem, saat 04:17’de meydana geldi ve 7,7 büyüklüğündeydi. 
         Aynı gün öğle saatlerinde Elbistan merkezli 7,6 büyüklüğünde ikinci bir deprem daha oldu. 
-        Bu depremler sadece binaları değil, insanların yaşamlarını da derinden etkiledi.
+        Depremler sadece binaları değil, insanların yaşamlarını da derinden etkiledi.
       </p>
       <p>
-        Depremler Kahramanmaraş, Hatay, Adıyaman, Gaziantep, Malatya ve çevre illerde büyük yıkıma sebep oldu. 
-        On binlerce bina tamamen çöktü veya ciddi hasar aldı. Milyonlarca insan güvenli yerlere tahliye edildi, 
-        binlerce kişi kısa süreli barınma alanlarına yerleştirildi. 
+        Kahramanmaraş, Hatay, Adıyaman, Gaziantep, Malatya ve çevre illerde büyük yıkım yaşandı. 
+        On binlerce bina çöktü veya ağır hasar aldı, milyonlarca kişi güvenli bölgelere taşındı. 
+        Deprem sonrası arama-kurtarma çalışmaları haftalarca sürdü ve uluslararası yardım ekipleri Türkiye’ye ulaştı.
       </p>
       <img src="images/kapak_093226.webp" alt="6 Şubat 2023 depremi">
     </section>
@@ -113,12 +135,12 @@
     <section>
       <h2>Bisküvi Olayı</h2>
       <p>
-        Deprem sonrası yaşanan dramatik anlardan biri, enkaz altından kurtarılan bir çocuğa bisküvi verilmesiydi. 
+        Deprem sonrasında yaşanan dramatik anlardan biri, enkaz altından kurtarılan bir çocuğa bisküvi verilmesiydi. 
         Çocuk günlerce aç kaldıktan sonra ilk defa bisküvi yemişti. Bu görüntü, Türkiye ve dünya çapında büyük yankı uyandırdı. 
       </p>
       <p>
         Bu olay, depremin sadece fiziksel yıkımını değil, insani boyutunu da gözler önüne serdi. 
-        İnsanların dayanışması, yardım ekiplerinin özverisi ve toplumun bir araya gelmesi, felaket sonrası toparlanmada kritik rol oynadı. 
+        İnsanların dayanışması, yardım ekiplerinin özverisi ve toplumun bir araya gelmesi, felaket sonrası toparlanmada kritik rol oynadı.
       </p>
       <img src="images/deprem-biskuvi.jpg" alt="Bisküvi olayı">
     </section>
