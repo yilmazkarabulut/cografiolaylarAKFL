@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
+      line-height: 1.7;
       margin: 0;
       padding: 0;
       background: linear-gradient(to bottom, #f5f5f5, #e0f7fa);
@@ -17,16 +17,17 @@
       background: #004d40;
       color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 40px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     header h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 36px;
       animation: fadeIn 2s ease-in-out;
     }
     header p {
       margin: 10px 0 0;
-      font-size: 18px;
+      font-size: 20px;
     }
     @keyframes fadeIn {
       from {opacity:0; transform: translateY(-20px);}
@@ -34,44 +35,49 @@
     }
     main {
       max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
+      margin: 30px auto;
+      padding: 25px;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     }
     section {
-      margin-bottom: 35px;
+      margin-bottom: 40px;
     }
     h2 {
       color: #e65100;
       margin-top: 0;
-      border-bottom: 2px solid #e65100;
+      border-bottom: 3px solid #e65100;
       padding-bottom: 5px;
+      font-size: 28px;
     }
     img {
       max-width: 100%;
       border-radius: 12px;
-      margin: 15px 0;
+      margin: 20px 0;
       display: block;
-      transition: transform 0.3s;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     img:hover {
       transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     }
     .info-box {
       background: #ffe0b2;
-      padding: 15px;
-      border-radius: 10px;
+      padding: 18px;
+      border-radius: 12px;
       margin: 15px 0;
       font-weight: bold;
+      line-height: 1.6;
     }
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       background: #004d40;
       color: white;
       font-size: 14px;
+      margin-top: 30px;
     }
     footer a {
       color: #fff;
@@ -90,13 +96,15 @@
     <section>
       <h2>6 Şubat 2023 Kahramanmaraş Depremleri</h2>
       <p>
-        6 Şubat 2023 tarihinde Türkiye, tarihinin en yıkıcı depremlerinden birini yaşadı.
-        Kahramanmaraş merkezli bu deprem, saat 04:17’de meydana geldi ve 7,7 büyüklüğündeydi.
-        Aynı gün öğle saatlerinde Elbistan merkezli 7,6 büyüklüğünde ikinci bir deprem daha oldu.
+        6 Şubat 2023 sabahı Türkiye, tarihinin en yıkıcı depremlerinden birini yaşadı. 
+        Kahramanmaraş merkezli deprem, saat 04:17’de meydana geldi ve 7,7 büyüklüğündeydi. 
+        Aynı gün öğle saatlerinde Elbistan merkezli 7,6 büyüklüğünde ikinci bir deprem daha oldu. 
+        Bu depremler sadece binaları değil, insanların yaşamlarını da derinden etkiledi.
       </p>
       <p>
-        Depremler Kahramanmaraş, Hatay, Adıyaman, Gaziantep, Malatya ve çevre illerde
-        büyük yıkıma sebep oldu. On binlerce bina yıkıldı, milyonlarca insan etkilendi.
+        Depremler Kahramanmaraş, Hatay, Adıyaman, Gaziantep, Malatya ve çevre illerde büyük yıkıma sebep oldu. 
+        On binlerce bina tamamen çöktü veya ciddi hasar aldı. Milyonlarca insan güvenli yerlere tahliye edildi, 
+        binlerce kişi kısa süreli barınma alanlarına yerleştirildi. 
       </p>
       <img src="images/kapak_093226.webp" alt="6 Şubat 2023 depremi">
     </section>
@@ -105,9 +113,12 @@
     <section>
       <h2>Bisküvi Olayı</h2>
       <p>
-        Deprem sonrasında en çok konuşulan anlardan biri, enkazdan kurtarılan bir çocuğa
-        bisküvi verilmesiydi. Çocuğun enkaz altında günlerce aç kaldıktan sonra
-        ilk defa bisküvi yemesi, Türkiye’yi ve dünyayı derinden duygulandırdı.
+        Deprem sonrası yaşanan dramatik anlardan biri, enkaz altından kurtarılan bir çocuğa bisküvi verilmesiydi. 
+        Çocuk günlerce aç kaldıktan sonra ilk defa bisküvi yemişti. Bu görüntü, Türkiye ve dünya çapında büyük yankı uyandırdı. 
+      </p>
+      <p>
+        Bu olay, depremin sadece fiziksel yıkımını değil, insani boyutunu da gözler önüne serdi. 
+        İnsanların dayanışması, yardım ekiplerinin özverisi ve toplumun bir araya gelmesi, felaket sonrası toparlanmada kritik rol oynadı. 
       </p>
       <img src="images/deprem-biskuvi.jpg" alt="Bisküvi olayı">
     </section>
