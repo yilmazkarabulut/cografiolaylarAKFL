@@ -5,48 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Türkiye'de Coğrafi Olaylar</title>
   <style>
+    /* Genel Ayarlar */
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
+      background: linear-gradient(to bottom, #f5f5f5, #e0f7fa);
       color: #333;
     }
+
+    /* Header */
     header {
       background: #004d40;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
     }
     header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 32px;
+      animation: fadeIn 2s ease-in-out;
     }
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+    }
+    @keyframes fadeIn {
+      from {opacity:0; transform: translateY(-20px);}
+      to {opacity:1; transform: translateY(0);}
+    }
+
+    /* Ana içerik */
     main {
       max-width: 900px;
       margin: 20px auto;
       padding: 20px;
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+
     section {
-      margin-bottom: 30px;
+      margin-bottom: 35px;
     }
+
     h2 {
-      color: #004d40;
+      color: #e65100; /* dikkat çekici turuncu */
       margin-top: 0;
+      border-bottom: 2px solid #e65100;
+      padding-bottom: 5px;
     }
+
+    /* Görseller */
     img {
       max-width: 100%;
-      border-radius: 8px;
+      border-radius: 12px;
       margin: 15px 0;
       display: block;
+      transition: transform 0.3s;
     }
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Önemli Bilgi Kutuları */
+    .info-box {
+      background: #ffe0b2;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 15px 0;
+      font-weight: bold;
+    }
+
+    /* Footer */
     footer {
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       background: #004d40;
       color: white;
       font-size: 14px;
@@ -60,13 +95,13 @@
 <body>
   <header>
     <h1>Türkiye'de Coğrafi Olaylar</h1>
-    <p>6 Şubat 2023 Kahramanmaraş Depremleri</p>
+    <p>6 Şubat 2023 Kahramanmaraş Depremleri & 17 Ağustos 1999 İzmit Depremi</p>
   </header>
 
   <main>
     <!-- 6 Şubat Depremi Bölümü -->
     <section>
-      <h2>Depremin Genel Bilgileri</h2>
+      <h2>6 Şubat 2023 Kahramanmaraş Depremleri</h2>
       <p>
         6 Şubat 2023 tarihinde Türkiye, tarihinin en yıkıcı depremlerinden birini yaşadı.
         Kahramanmaraş merkezli bu deprem, saat 04:17’de meydana geldi ve 7,7 büyüklüğündeydi.
@@ -77,30 +112,9 @@
         büyük yıkıma sebep oldu. On binlerce bina yıkıldı, milyonlarca insan etkilendi.
       </p>
       <img src="images/deprem1.webp" alt="Deprem sonrası yıkılmış binalar">
-    </section>
-
-    <section>
-      <h2>Yıkım ve Etkiler</h2>
-      <p>
-        Resmi kayıtlara göre 50 binden fazla kişi hayatını kaybetti, yüz binlerce kişi yaralandı.
-        Türkiye’nin yanı sıra Suriye’de de büyük yıkım yaşandı. Deprem, 11 ili doğrudan etkiledi
-        ve ülke ekonomisine büyük zarar verdi.
-      </p>
-      <p>
-        Enkaz kaldırma çalışmaları haftalarca sürdü. Dünya genelinden pek çok ülke
-        Türkiye’ye yardım ekipleri gönderdi.
-      </p>
-      <img src="images/deprem2.jpg" alt="6 Şubat 2023 Depremi - Saat 04:17">
-    </section>
-
-    <section>
-      <h2>“Bisküvi Olayı”</h2>
-      <p>
-        Deprem sonrasında en çok konuşulan anlardan biri, enkazdan kurtarılan bir çocuğa
-        bisküvi verilmesiydi. Çocuğun enkaz altında günlerce aç kaldıktan sonra
-        ilk defa bisküvi yemesi, Türkiye’yi ve dünyayı derinden duygulandırdı.
-        Bu olay, felaketin insani boyutunu gözler önüne seren sembollerden biri oldu.
-      </p>
+      <div class="info-box">
+        Önemli Bilgi: 50 binden fazla kişi hayatını kaybetti, yüz binlerce kişi yaralandı.
+      </div>
     </section>
 
     <!-- 17 Ağustos 1999 İzmit Depremi Bölümü -->
@@ -115,10 +129,10 @@
       <p>
         Depremin süresi sadece 37 saniye olmasına rağmen, 285.211 ev ve 42.902 iş yeri hasar gördü. Yaklaşık 200.000 kişi evsiz kaldı ve Türkiye ekonomisine 12-20 milyar Amerikan Doları değerinde zarar meydana geldi.
       </p>
-      <p>
-        Deprem sonrası altyapı, sanayi ve ulaşımda ciddi hasarlar oluştu. Tüpraş rafinerisinde çıkan yangın ve yolların kapanması, yardım çalışmalarını zorlaştırdı. Deprem, Türkiye’de deprem bilincini artıran ve yapı güvenliği standartlarının gözden geçirilmesine yol açan önemli bir olaydır.
-      </p>
       <img src="images/izmit_depremi.jpg" alt="17 Ağustos 1999 İzmit Depremi yıkım görüntüsü">
+      <div class="info-box">
+        Önemli Bilgi: Deprem sonrası altyapı ve sanayi büyük zarar gördü. Tüpraş rafinerisinde yangın çıktı.
+      </div>
     </section>
   </main>
 
